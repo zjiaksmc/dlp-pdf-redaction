@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "members": [
+        "user:zjia@resultant.com"
+      ],
+      "role": "roles/iam.serviceAccountAdmin"
+    },
+    {
+      "members": [
+        "user:zjia@resultant.com"
+      ],
+      "role": "roles/iam.serviceAccountUser"
+    }
+  ],
+  "etag": "BwYFM_qRRSk=",
+  "version": 1
+}

@@ -50,7 +50,7 @@ data "template_file" "workflow" {
 }
 
 resource "google_workflows_workflow" "pdf_redactor" {
-  name            = "pdf-redactor-workflow${local.app_suffix}"
+  name            = "f709-deidentification-workflow${local.app_suffix}"
   region          = var.wf_region
   description     = "Workflow that redacts sensitive information from a single PDF file"
   service_account = google_service_account.workflow.id

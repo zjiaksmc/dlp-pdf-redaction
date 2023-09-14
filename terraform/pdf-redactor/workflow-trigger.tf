@@ -27,6 +27,11 @@ resource "google_project_iam_member" "workflow_trigger_event_receiver" {
   role    = "roles/eventarc.eventReceiver"
   member  = "serviceAccount:${google_service_account.workflow_trigger.email}"
 }
+resource "google_project_iam_member" "workflow_trigger_service_agent" {
+  project = var.project_id
+  role    = "roles/eventarc.serviceAgent"
+  member  = "serviceAccount:${google_service_account.workflow_trigger.email}"
+}
 
 # GCP creates a special SA for GCS that needs to be granted pub/sub permissions
 # ref: https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/storage_project_service_account

@@ -19,7 +19,7 @@ resource "google_data_loss_prevention_inspect_template" "dlp_pdf_template" {
 
   inspect_config {
     info_types {
-      name = "EMAIL_ADDRESS"
+      name = "DATE_OF_BIRTH"
     }
     info_types {
       name = "PERSON_NAME"
@@ -28,10 +28,28 @@ resource "google_data_loss_prevention_inspect_template" "dlp_pdf_template" {
       name = "LAST_NAME"
     }
     info_types {
-      name = "PHONE_NUMBER"
+      name = "COUNTRY_DEMOGRAPHIC"
     }
     info_types {
       name = "FIRST_NAME"
+    }
+    info_types {
+      name = "LOCATION"
+    }
+    info_types {
+      name = "STREET_ADDRESS"
+    }
+    info_types {
+      name = "US_SOCIAL_SECURITY_NUMBER"
+    }
+    info_types {
+      name = "US_INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER"
+    }
+    info_types {
+      name = "US_EMPLOYER_IDENTIFICATION_NUMBER"
+    }
+    info_types {
+      name = "US_STATE"
     }
   }
 

@@ -1,0 +1,3 @@
+bucket="dlp-workflow-tf-state"
+prefix="static.tfstate.d"
+impersonate_service_account="service-access@generative-ai-demo-398901.iam.gserviceaccount.com"
